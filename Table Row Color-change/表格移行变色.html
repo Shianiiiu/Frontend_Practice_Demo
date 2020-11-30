@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        table{
+            margin: 50px auto 0;
+            border-collapse: collapse;
+        }
+        thead tr{
+            height: 50px;
+        }
+        tbody tr{
+            height: 30px;
+        }
+        tbody tr:nth-child(even){
+            background-color: rgb(207, 219, 207);
+        }
+        tbody tr:nth-child(odd){
+            background-color: rgb(186, 192, 186);
+        }
+        tr{
+            text-align: center;
+        }
+        th{
+            background-color: rgb(37, 74, 240);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" width="600">
+        <thead>
+            <tr>
+                <th>序号</th>
+                <th>姓名</th>
+                <th>课程</th>
+                <th>分数</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>小手</td>
+                <td>高数</td>
+                <td>98</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>小鬼</td>
+                <td>英语</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>小空</td>
+                <td>数据结构</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>004</td>
+                <td>小娜</td>
+                <td>操作系统</td>
+                <td>82</td>
+            </tr>
+            <tr>
+                <td>005</td>
+                <td>小九</td>
+                <td>线性代数</td>
+                <td>90</td>
+            </tr>
+        </tbody>
+    </table> 
+
+</body>
+<script>
+    var trs = document.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+    // console.log(trs);
+    for(var i in trs){
+        trs[i].onmouseover = function(){
+            this.style.backgroundColor = '#eee';
+        }
+        trs[i].onmouseout = function(){
+            this.style.backgroundColor = '';
+        }
+    }
+</script>
+</html>
