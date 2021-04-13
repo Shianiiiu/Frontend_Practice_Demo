@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Dropdown Menu</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">Home</li>
+            <li class="nav-item">About</li>
+        
+            <!-- Dropdown will go here -->
+            <li class="nav-item has-dropdown">
+                <a href="#">Theme</a>
+                <!-- with an opacity of zero to keep it hidden until it becomes focused -->
+                <ul class="dropdown">
+                    <li class="dropdown-item">
+                        <a href="#">light</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#">dark</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#">solarize</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item">Login</li>
+        </ul>
+    </nav>
+</body>
+</html>
