@@ -1,3 +1,7 @@
+# How to Build a CSS Dropdown Menu
+
+文章转载链接：[https://fireship.io/snippets/basic-css-dropdown-menu/](https://fireship.io/snippets/basic-css-dropdown-menu/)
+
 Build a clickable dropdown menu with CSS (no JavaScript) **306 words.**
 
 Created Mar 24, 2020  
@@ -121,5 +125,5 @@ file_type_css
 
 
 
-文章链接：[https://fireship.io/snippets/basic-css-dropdown-menu/](https://fireship.io/snippets/basic-css-dropdown-menu/)
+
 
