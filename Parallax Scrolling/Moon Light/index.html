@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Moon Light | Parallax Scrolling </title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="images/stars.png" alt="stars" id="stars">
+        <img src="images/moon.png" alt="moon" id="moon">
+        <img src="images/mountains_behind.png" alt="mountains_behind" id="mountains_behind">
+        <h2 class="text">Moon Light</h2>
+        <a href="#info" class="btn">Explore</a>
+        <img src="images/mountains_front.png" alt="mountains_front" id="mountains_front">
+    </section>
+    <div class="info" id="info">
+        <h2>Parallax Scrolling Effects</h2>
+        <p>
+            Parallax scrolling is a web design technique in which the website background moves at a slower pace than the foreground. This results in a 3D effect as visitors scroll down the site, adding a sense of depth and creating a more immersive browsing experience.
+            <br><br>Parallax is based on optical illusion. Since the human eye perceives objects that are close to us as larger than things farther away, we perceive distant objects as if they were moving more slowly.
+            <br><br>The illusion has been long adopted into parallax across different mediums, fostering a realistic effect. Its first use was in traditional animation, dating back to as early as Disney’s Snow White and the Seven Dwarfs, and in video games such as Super Mario. 
+            Parallax scrolling is a web design technique in which the website background moves at a slower pace than the foreground. This results in a 3D effect as visitors scroll down the site, adding a sense of depth and creating a more immersive browsing experience.
+            <br><br>Parallax is based on optical illusion. Since the human eye perceives objects that are close to us as larger than things farther away, we perceive distant objects as if they were moving more slowly.
+            <br><br>The illusion has been long adopted into parallax across different mediums, fostering a realistic effect. Its first use was in traditional animation, dating back to as early as Disney’s Snow White and the Seven Dwarfs, and in video games such as Super Mario. 
+            Parallax scrolling is a web design technique in which the website background moves at a slower pace than the foreground. This results in a 3D effect as visitors scroll down the site, adding a sense of depth and creating a more immersive browsing experience.
+            <br><br>Parallax is based on optical illusion. Since the human eye perceives objects that are close to us as larger than things farther away, we perceive distant objects as if they were moving more slowly.
+        </p>
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementsByClassName('text');
+        let btn = document.getElementsByClassName('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll',function(){
+            let offset = window.scrollY;
+            stars.style.left = offset * 0.25 + 'px';
+            moon.style.top = offset + 'px';
+            mountains_behind.style.top = offset * 0.25 + 'px';
+            // mountains_front.style.top = offset * 0 + 'px';
+            text[0].style.marginRight = offset * 3 + 'px';
+            text[0].style.marginTop = offset * 1.2 + 'px';
+            btn[0].style.marginTop = offset * 1.2 + 'px';
+            header.style.top = offset * 0.5  + 'px';
+        })
+    </script>
+</body>
+</html>
