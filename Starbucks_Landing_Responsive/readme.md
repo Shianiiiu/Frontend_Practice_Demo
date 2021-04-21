@@ -49,9 +49,9 @@ function toggleMenu() {
 }
 ```
 
-其中使用到**`clip-path`**属性：**用于指定使用一个基本图形或者内联或外部的SVG路径作为剪裁路径对元素进行裁剪。**
+其中使用到`clip-path`属性：**用于指定使用一个基本图形或者内联或外部的SVG路径作为剪裁路径对元素进行裁剪。**
 
-搭配使用**`circle`**函数：**`circle()`函数是一个图形函数，用于指定某种基本图形[basci-shape](http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/basic-shape.html)类型。**
+搭配使用`circle`函数：**`circle()`函数是一个图形函数，用于指定某种基本图形[basci-shape](http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/basic-shape.html)类型。**
 
 ```css
 circle() = circle( [<shape-radius>]? [at <position>]? )
@@ -69,9 +69,9 @@ circle() = circle( [<shape-radius>]? [at <position>]? )
 filter: invert(1);
 ```
 
-**`filter`**属性：**将模糊或颜色偏移等图形效果应用于元素**。滤镜通常用于**调整图像，背景和边框的渲染**。
+`filter`属性：**将模糊或颜色偏移等图形效果应用于元素**。滤镜通常用于**调整图像，背景和边框的渲染**。
 
-**`invert`**函数反转输入图像。`amount` 的值定义转换的比例。`100%` 的价值是完全反转。值为 `0%` 则图像无变化。值在 `0%` 和 `100%` 之间，则是效果的线性乘数。 若值未设置值，默认为 `0`。
+`invert`函数反转输入图像。`amount` 的值定义转换的比例。`100%` 的价值是完全反转。值为 `0%` 则图像无变化。值在 `0%` 和 `100%` 之间，则是效果的线性乘数。 若值未设置值，默认为 `0`。
 
 [MDN filter](https://developer.mozilla.org/zh-CN/docs/Web/CSS/filter)
 
