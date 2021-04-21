@@ -197,8 +197,8 @@ header {
     -moz-transform: scale(0.6);
     -ms-transform: scale(0.6);
     -o-transform: scale(0.6);
-    filter: invert(1);
-    -webkit-filter: invert(1);
+    filter: invert(1); 
+    -webkit-filter: invert(1); 
 }
 
 .circle {
