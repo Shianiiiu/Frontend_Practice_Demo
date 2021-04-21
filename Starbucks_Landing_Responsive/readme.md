@@ -6,7 +6,7 @@
 
 ![image-20210421204039598](https://gitee.com/shianiiiu/picgo_bed/raw/master/img/20210421204039.png)
 
- **[效果预览](https://shianiiiu.github.io/Frontend_Practice_Demo/Starbucks Landing Responsive/index.html)**
+ **[效果预览](https://shianiiiu.github.io/Frontend_Practice_Demo/Starbucks_Landing_Responsive/index.html)**
 
 ## 知识点巩固
 
