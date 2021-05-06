@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌗</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="card">
+            <div class="toggle"><i class="fas fa-moon"></i></div>
+            <div class="content">
+                <div class="imgText">
+                    <div class="imgBx">
+                        <img src="img.jpeg" alt="img dog">
+                    </div>
+                    <h3>Malleous Hwang<br><span>Happy Sigle Doge</span></h3>
+                </div>
+                <div>
+                    <ul class="sci">
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const sec = document.querySelector('section')
+        const toggle = document.querySelector('.toggle')
+        const icon = document.querySelector('.toggle i')
+
+        toggle.onclick = function() {
+            sec.classList.toggle('dark');
+
+            if(icon.classList.contains('fa-moon')) {
+                icon.classList.replace('fa-moon','fa-sun')
+            }else {
+                icon.classList.replace('fa-sun','fa-moon')
+            }
+        }
+    </script>
+</body>
+</html>
