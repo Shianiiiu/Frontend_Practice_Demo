@@ -1,4 +1,10 @@
-教学视频链接🔗[https://www.youtube.com/watch?v=QTHRWGn_sJw](https://www.youtube.com/watch?v=QTHRWGn_sJw)
+# Music Player 极简音乐播放器 🎵
+
+> [教学视频链接](https://www.youtube.com/watch?v=QTHRWGn_sJw) 📺
+
+
+
+## 实现效果
 
 演示图🖼：
 
