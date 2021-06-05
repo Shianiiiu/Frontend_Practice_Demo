@@ -12,4 +12,4 @@
 
 移动端📱
 
-<img src="https://picgo-bed-1305701422.cos.ap-shanghai.myqcloud.com/picgo/20210605165504.gif" alt="slide login2" style="zoom:100%;" />
+<img src="https://picgo-bed-1305701422.cos.ap-shanghai.myqcloud.com/picgo/20210605165504.gif" alt="slide login2" style="zoom:50%;" />
