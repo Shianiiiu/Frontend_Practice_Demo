@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svg 实现星球环绕加载</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .app {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: repeating-linear-gradient(300deg, rgb(39, 60, 100) 0px, rgb(39, 60, 100) 12px, transparent 13px), repeating-linear-gradient(382deg, rgb(39, 60, 100) 0px, rgb(39, 60, 100) 12px, transparent 13px), linear-gradient(255deg, rgb(242, 238, 179), rgb(242, 241, 16));
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app">
+        <svg viewBox="0 0 160 160" width="320" height="320" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <image id="ball" href="./ball.png" x="20" y="20" width="120" height="120" />
+                <g id="fly" transform="matrix(0.866, -0.5, 0.25, 0.433, 80, 80)">
+                    <path d="M 0,70 A 65,70 0 0,0 65,0 5,5 0 0,1 75,0 75,70 0 0,1 0,70Z" fill="rgba(214,73,42,.5)">
+                        <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="1.2s" repeatCount="indefinite" />
+                    </path>
+                </g>
+                <clipPath id="clip-ball">
+                    <path d="M 50,0 A 50,50 0 0,0 -50,0Z" transform="matrix(0.866, -0.5, 0.5, 0.866, 80, 80)" />
+                </clipPath>
+            </defs>
+            <use href="#ball" />
+            <use href="#fly"></use>
+            <use href="#ball" clip-path="url(#clip-ball)" />
+        </svg>
+    </div>
+</body>
+
+</html>
